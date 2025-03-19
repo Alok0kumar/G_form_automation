@@ -1,10 +1,10 @@
+
 name: Auto Submit Google Form
 
 on:
+  workflow_dispatch:  # Allows manual trigger
   schedule:
-    - cron: '0 8 * * *'  # Runs once a day at 8:00 AM UTC (2:00 PM IST)
-
-  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+    - cron: '30 8 * * *'  # Runs at 2:00 PM IST (8:30 AM UTC)
 
 jobs:
   run-script:
@@ -22,4 +22,4 @@ jobs:
         run: pip install requests
 
       - name: Run Script
-        run: python "trial2.0.py"
+        run: python trial2.0.py
