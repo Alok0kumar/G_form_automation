@@ -1,0 +1,25 @@
+name: Auto Submit Google Form
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Runs once a day at 8:00 AM UTC (2:00 PM IST)
+
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Script
+        run: python "trial2.0.py"
