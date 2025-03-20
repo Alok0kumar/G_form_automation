@@ -5,7 +5,7 @@ form_url = "https://docs.google.com/forms/d/e/1FAIpQLSfIFMWue54765iy2eGO7KnSdQaN
 
 # Make sure entry IDs and responses match the form
 data = {
-    "entry.559352220": "Alok",  # What is your name?
+    "entry.559352220": "User1",  # What is your name?
     "entry.924523986": "9",   # How many of you are attending? (if text input)
     "entry.1751303409": "No",  # Do you have any allergies or dietary restrictions?
     "entry.443565211": "de.coderr0101@gmail.com",  # Email Address
