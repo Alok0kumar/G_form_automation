@@ -1,2 +1,2 @@
 # G_form_automation
-This is a protype to automate a google form submission for a specific time schedule.
+This is a prototype to automate a google form submission for a specific time schedule.
